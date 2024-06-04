@@ -9,9 +9,12 @@ v0.2.0 of *magic-cta-pipe* provides all the functionalities to perform a MAGIC+L
 # Installation for users
 
 *magic-cta-pipe* and its dependencies may be installed using the *Anaconda* or *Miniconda* package system. We recommend creating a conda virtual environment
-first, to isolate the installed version and dependencies from your master environment (this is optional).
+first, to isolate the installed version and dependencies from your master environment (this is optional). It is a good idea also to clean the cache before installing it:
 
-The following command will set up a conda virtual environment, add the necessary package channels, and install *magic-cta-pipe* and its dependencies::
+    conda clean --all
+This can avoid _disk quota exceeded_ errors.
+
+The following command will set up a conda virtual environment, add the necessary package channels, and install *magic-cta-pipe* and its dependencies:
 
     git clone https://github.com/ranieremenezes/magic-cta-pipe
     cd magic-cta-pipe
