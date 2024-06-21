@@ -22,6 +22,11 @@ The following command will set up a conda virtual environment, add the necessary
     conda activate magic-lst
     pip install .
 
+Then you must upgrade numpy and astropy:
+
+    pip install numpy --upgrade
+    pip install astropy --upgrade
+
 # Instructions for developers
 
 People who would like to join the development of *magic-cta-pipe*, please contact Alessio Berti (<alessioberti90@gmail.com>) to get write access to the repository.
