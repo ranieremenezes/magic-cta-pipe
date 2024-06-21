@@ -1,0 +1,22 @@
+mc_tel_ids:
+    LST-1: 1
+    LST-2: 2
+    LST-3: 3
+    LST-4: 0
+    MAGIC-I: 0
+    MAGIC-II: 0
+
+directories:
+    workspace_dir : "/fefs/aswg/workspace/raniere/3LST_PMT/"
+    target_name   : "pointsource"
+    MC_gammas     : "/fefs/aswg/mc/LST_Advanced_Camera_Prod1/gamma/zenith_20deg/south_pointing/4LSTs_PMT/sim_telarray/"
+    MC_electrons  : "/fefs/aswg/mc/LST_Advanced_Camera_Prod1/electron/zenith_20deg/south_pointing/4LSTs_PMT/sim_telarray/"
+    MC_helium     : ""
+    MC_protons    : "/fefs/aswg/mc/LST_Advanced_Camera_Prod1/proton/zenith_20deg/south_pointing/4LSTs_PMT/sim_telarray/"
+    MC_gammadiff  : "/fefs/aswg/mc/LST_Advanced_Camera_Prod1/gamma-diffuse/zenith_20deg/south_pointing/4LSTs_PMT/sim_telarray/"
+    
+general:
+    focal_length  : "EFFECTIVE"
+    proton_train  : 0.8 # 0.8 means that 80% of the DL1 protons will be used for training the Random Forest
+    environment_name: "magic-lst"
+    
