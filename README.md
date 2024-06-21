@@ -18,8 +18,8 @@ The following command will set up a conda virtual environment, add the necessary
 
     git clone https://github.com/ranieremenezes/magic-cta-pipe
     cd magic-cta-pipe
-    conda env create -n magic-lst -f environment.yml
-    conda activate magic-lst
+    mamba env create -n magic-lst -f environment.yml
+    mamba activate magic-lst
     pip install .
 
 # Instructions for developers
