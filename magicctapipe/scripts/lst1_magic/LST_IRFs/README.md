@@ -16,9 +16,20 @@ python setting_up_config_and_dir.py
 
 You can then check the log files in the directory pointsource/DL1/MC/gammas/. Each job will take less than 10 min to run.
 
-Now we can split the proton sample into training and testing and then merge the runs for each particle (be sure that the scripts **merging_runs_and_spliting_training_samples.py** and **merge_hdf_files.py** are in the working directory):
+Now we can split the proton sample into training and testing (be sure that the scripts **spliting_train_test.py** is in the working directory):
 
 ```
-python merging_runs_and_spliting_training_samples.py
+python spliting_train_test.py
 ```
 
+Once it is done, we can compute the stereo parameters (be sure that the scripts **stereo_events.py** and **lst1_magic_stereo_reco.py** are in the working directory):
+
+```
+python stereo_events.py
+```
+
+We finish the DL1 analysis by merging the stereo files (**merging_runs.py** and **merge_hdf_files.py** must be in the working directory):
+
+```
+python merging_runs.py
+```
