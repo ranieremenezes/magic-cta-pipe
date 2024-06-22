@@ -33,3 +33,21 @@ We finish the DL1 analysis by merging the stereo files (**merging_runs.py** and 
 ```
 python merging_runs.py
 ```
+
+Once we have the DL1 stereo parameters for all real and MC data, we can train the Random Forest (**mRF.py** and **lst1_magic_train_rfs.py** must be in the working directory):
+
+```
+python RF.py
+```
+
+This script creates the file config_RF.yaml with several parameters related to the energy regressor, disp regressor, and event classifier, and then computes the RF (energy, disp, and classifier) based on the merged-stereo MC diffuse gammas and training proton samples by calling the script lst1_magic_train_rfs.py. The results are saved in [...]/DL1/MC/RFs.
+
+### DL1 to DL2
+
+Once it is done, we can finally convert our DL1 stereo files into DL2 by running:
+
+```
+python DL1_to_DL2.py
+```
+
+This script runs lst1_magic_dl1_stereo_to_dl2.py on all DL1 stereo files, which applies the RFs saved in [...]/DL1/MC/RFs to stereo DL1 data (real and test MCs) and produces DL2 real and MC data. The results are saved in [...]/DL2/Observations and [...]/DL2/MC.
