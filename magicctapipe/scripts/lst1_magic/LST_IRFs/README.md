@@ -16,3 +16,9 @@ python setting_up_config_and_dir.py
 
 You can then check the log files in the directory pointsource/DL1/MC/gammas/. Each job will take less than 10 min to run.
 
+Now we can split the proton sample into training and testing and then merge the runs for each particle:
+
+```
+python merging_runs_and_spliting_training_samples.py
+```
+
