@@ -34,7 +34,7 @@ We finish the DL1 analysis by merging the stereo files (**merging_runs.py** and 
 python merging_runs.py
 ```
 
-Once we have the DL1 stereo parameters for all real and MC data, we can train the Random Forest (**mRF.py** and **lst1_magic_train_rfs.py** must be in the working directory):
+Once we have the DL1 stereo parameters for all real and MC data, we can train the Random Forest (**RF.py** and **lst1_magic_train_rfs.py** must be in the working directory):
 
 ```
 python RF.py
