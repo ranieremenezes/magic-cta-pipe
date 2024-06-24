@@ -84,6 +84,7 @@ def main():
     DL1_to_DL2_MC(target_dir, "gammas", environment)
     DL1_to_DL2_MC(target_dir, "protons", environment)
     DL1_to_DL2_MC(target_dir, "protons_test", environment)
+    DL1_to_DL2_MC(target_dir, "electrons", environment)
     
     
     print("***** Running lst1_magic_dl1_stereo_to_dl2.py in the DL1 data files...")
