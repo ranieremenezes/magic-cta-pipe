@@ -1,10 +1,12 @@
 ## IRFs for LSTs
 
-1) create a directory in your workspace. Let's say:
+1) Install MCP following the tutorial here: https://github.com/ranieremenezes/magic-cta-pipe/tree/master 
+
+2) create a directory in your workspace. Let's say:
    
    mkdir 3LST_PMT
 
-2) Copy the **config_general.yaml**, **lst1_magic_mc_dl0_to_dl1.py**, and **setting_up_config_and_dir.py** to this directory, modifying the configuration file as you wish. For deeper configuration changes, you will have to modify the first function of the file setting_up_config_and_dir.py
+3) Copy the **config_general.yaml**, **lst1_magic_mc_dl0_to_dl1.py**, and **setting_up_config_and_dir.py** to this directory, modifying the configuration file as you wish. For deeper configuration changes, you will have to modify the first function of the file setting_up_config_and_dir.py
 
 ### DL0 to DL1
 
