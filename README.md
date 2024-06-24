@@ -22,7 +22,7 @@ The following command will set up a conda virtual environment, add the necessary
     conda activate magic-lst
     pip install .
 
-Then you must upgrade numpy and astropy:
+Then you must upgrade numpy (1.24.4) and astropy (5.2.2):
 
     pip install numpy --upgrade
     pip install astropy --upgrade
