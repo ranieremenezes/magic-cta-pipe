@@ -64,4 +64,4 @@ python IRF.py
 python diagnostic.py
 ```
 
-The IRFs are saved at TARGET_NAME/IRF, while all diagnostic plots will be saved in the directory TARGET_NAME (defined in the config_general.yaml file).
+The IRFs are saved at TARGET_NAME/IRF, while all diagnostic plots will be saved in the directory TARGET_NAME (defined in the config_general.yaml file), and the data for these plots can be found in your working directory.
